@@ -11,3 +11,17 @@ vim.keymap.set('n', '<leader>fb', builtin.builtin, {})
 vim.keymap.set('n', '<leader>ps', function()
 	builtin.grep_string({search = vim.fn.input("Grep > ") });
 end)
+
+require('telescope').setup{
+  defaults = {
+    -- ...
+  },
+  pickers = {
+    find_files = {
+     -- theme = "default", -- theme | dropdown | cursor | ivy
+    }
+  },
+  extensions = {
+    -- ...
+  }
+}
