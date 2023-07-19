@@ -10,7 +10,7 @@ vim.keymap.set('n', '<leader>n', ':NvimTreeToggle<CR>', { noremap = true, silent
 require("nvim-tree").setup {
   auto_reload_on_write = true,
   disable_netrw = true,
-  hijack_cursor = false,
+  hijack_cursor = true,
   hijack_netrw = true,
   hijack_unnamed_buffer_when_opening = false,
   sort = {

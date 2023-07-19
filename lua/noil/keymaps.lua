@@ -1,9 +1,6 @@
 vim.g.mapleader = " "
 
---vim.keymap.set("n", "<leader>n", ":Lex<CR>:vertical resize 20<CR>")
---vim.keymap.set("n", "<leader>n", ":Lex<CR>")
 vim.keymap.set("n", "<leader>m", ":MaximizerToggle<CR>")
-vim.keymap.set("n", ":n", ":noh<CR>")
 vim.keymap.set("n", "<leader>h", ":wincmd h<CR>")
 vim.keymap.set("n", "<leader>j", ":wincmd j<CR>")
 vim.keymap.set("n", "<leader>k", ":wincmd k<CR>")
@@ -25,6 +22,7 @@ vim.keymap.set("n", "<leader>L", "<C-w>L")
 vim.keymap.set("i", "jj", "<Esc>")
 vim.keymap.set("i", "kk", "<Esc>")
 vim.keymap.set("i", "hh", "<Esc>")
+vim.keymap.set("n", "<leader>:n", ":noh<CR>")
 
 vim.keymap.set("t", "<leader>h", "<c-\\><c-n><c-w>h")
 vim.keymap.set("t", "<leader>j", "<c-\\><c-n><c-w>j")
