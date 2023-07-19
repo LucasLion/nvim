@@ -4,3 +4,8 @@ function gstatus_and_resize()
 end
 
 vim.keymap.set("n", "<leader>gs", gstatus_and_resize)
+vim.keymap.set("n", "<leader>gb", ":Git blame<CR>")
+vim.keymap.set("n", "<leader>gd", ":Gdiffsplit<CR>")
+vim.keymap.set("n", "<leader>gc", ":Gcommit<CR>")
+vim.keymap.set("n", "<leader>gp", ":Git push<CR>")
+vim.keymap.set("n", "<leader>gl", ":Git pull<CR>")
