@@ -53,16 +53,5 @@ return require('packer').startup(function(use)
 		'nvim-lualine/lualine.nvim',
 		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 	}
-
-	use {
-		'glepnir/dashboard-nvim',
-		event = 'VimEnter',
-		config = function()
-			require('dashboard').setup {
-				-- config
-			}
-		end,
-	requires = {'nvim-tree/nvim-web-devicons'}
-	}
 	use ('karb94/neoscroll.nvim')
 end)
