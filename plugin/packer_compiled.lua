@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/noil/.local/share/nvim/site/pack/packer/start/barbar.nvim",
     url = "https://github.com/romgrk/barbar.nvim"
   },
+  ["cheat-sheet"] = {
+    loaded = true,
+    path = "/home/noil/.local/share/nvim/site/pack/packer/start/cheat-sheet",
+    url = "https://github.com/Djancyp/cheat-sheet"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/noil/.local/share/nvim/site/pack/packer/start/cmp-buffer",

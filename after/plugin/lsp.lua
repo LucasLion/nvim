@@ -5,6 +5,7 @@ lsp.preset("recommended")
 lsp.ensure_installed({
 	'bashls',
 	'clangd',
+	'clang-format',
 	'cssls',
 	'dockerls',
 	'html',

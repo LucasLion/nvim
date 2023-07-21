@@ -5,14 +5,14 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
-	
+
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.2',
 	    requires = { {'nvim-lua/plenary.nvim'} }
 	}
-	
+
 	use('ellisonleao/gruvbox.nvim')
-	
+
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	use('nvim-treesitter/playground')
 	use('theprimeagen/harpoon')
@@ -26,7 +26,7 @@ return require('packer').startup(function(use)
 			{'neovim/nvim-lspconfig'},
 	  	  	{'williamboman/mason.nvim'},
 	  	  	{'williamboman/mason-lspconfig.nvim'},
-	
+
 	  	  	-- Autocompletion
 	  	  	{'hrsh7th/nvim-cmp'},
 	  	  	{'hrsh7th/cmp-buffer'},
@@ -34,7 +34,7 @@ return require('packer').startup(function(use)
 	  	  	{'saadparwaiz1/cmp_luasnip'},
 	  	  	{'hrsh7th/cmp-nvim-lsp'},
 	  	  	{'hrsh7th/cmp-nvim-lua'},
-	
+
 	  	  	-- Snippets
 	  	  	{'L3MON4D3/LuaSnip'},
 	  	  	{'rafamadriz/friendly-snippets'},
@@ -64,4 +64,5 @@ return require('packer').startup(function(use)
 	use ('leoluz/nvim-dap-go')
 	use ('nvim-telescope/telescope-dap.nvim')
 	--dap-tests
+	use ("Djancyp/cheat-sheet")
 end)
