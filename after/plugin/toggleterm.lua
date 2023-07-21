@@ -4,7 +4,7 @@ require('toggleterm').setup({
 })
 
 vim.keymap.set('n', '<leader>tt', '<cmd>ToggleTerm direction=float<cr>', { noremap = true, silent = true })
-vim.keymap.set('t', '<leader>tt', '<cmd>ToggleTerm direction=float<cr>', { noremap = true, silent = true })	
+vim.keymap.set('t', '<leader>tt', '<cmd>ToggleTerm direction=float<cr>', { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>th', '<cmd>ToggleTerm direction=horizontal<cr>', { noremap = true, silent = true })
 vim.keymap.set('t', '<leader>th', '<cmd>ToggleTerm direction=horizontal<cr>', { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>tv', '<cmd>ToggleTerm ', { noremap = true, silent = true })
@@ -30,13 +30,13 @@ local Terminal  = require('toggleterm.terminal').Terminal
 local lazygit = Terminal:new({ cmd = "lazygit", hidden = true })
 local htop = Terminal:new({cmd = "htop", hidden = true})
 
-function _lazygit_toggle()
+function _Lazygit_toggle()
   lazygit:toggle()
 end
 
-function _htop_toggle()
-  htop:toggle()
+function _Htop_toggle()
+	htop:toggle()
 end
 
-vim.api.nvim_set_keymap("n", "<leader>git", "<cmd>lua _lazygit_toggle()<CR>", {noremap = true, silent = true})
-vim.api.nvim_set_keymap("n", "<leader>top", "<cmd>lua _htop_toggle()<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>git", "<cmd>lua _Lazygit_toggle()<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>top", "<cmd>lua _Htop_toggle()<CR>", {noremap = true, silent = true})
