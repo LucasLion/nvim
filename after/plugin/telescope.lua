@@ -10,7 +10,7 @@ vim.keymap.set('n', '<leader>fr', builtin.lsp_references, {})
 vim.keymap.set('n', '<leader>ft', builtin.treesitter, {})
 vim.keymap.set('n', '<leader>fb', builtin.builtin, {})
 
-vim.keymap.set('n', '<leader>ps', function()
+vim.keymap.set('n', '<leader>fs', function()
 	builtin.grep_string({search = vim.fn.input("Grep > ") });
 end)
 
