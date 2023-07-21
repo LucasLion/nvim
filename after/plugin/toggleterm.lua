@@ -28,15 +28,15 @@ vim.keymap.set('n', '<leader>tv', '<cmd>ToggleTerm ', { noremap = true, silent =
 
 local Terminal  = require('toggleterm.terminal').Terminal
 local lazygit = Terminal:new({ cmd = "lazygit", hidden = true })
-local btop = Terminal:new({cmd = "btop", hidden = true})
+local htop = Terminal:new({cmd = "htop", hidden = true})
 
 function _lazygit_toggle()
   lazygit:toggle()
 end
 
-function _btop_toggle()
-  btop:toggle()
+function _htop_toggle()
+  htop:toggle()
 end
 
 vim.api.nvim_set_keymap("n", "<leader>git", "<cmd>lua _lazygit_toggle()<CR>", {noremap = true, silent = true})
-vim.api.nvim_set_keymap("n", "<leader>top", "<cmd>lua _btop_toggle()<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>top", "<cmd>lua _htop_toggle()<CR>", {noremap = true, silent = true})
