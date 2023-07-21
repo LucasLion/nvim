@@ -33,6 +33,7 @@ vim.keymap.set("t", "<leader>l", "<c-\\><c-n><c-w>l")
 vim.keymap.set("n", "<leader>v", ":vsplit<CR><C-w>w", {silent = true})
 vim.keymap.set("n", "<leader>c", ":split<CR><C-w>w", {silent = true})
 
+vim.keymap.set("n", "<leader><leader>", ":source<CR>")
 vim.g.user42 = "llion"
 vim.g.user42 = "llion@student.42mulhouse.fr"
 

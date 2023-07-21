@@ -58,4 +58,10 @@ return require('packer').startup(function(use)
 		"nvim-telescope/telescope-file-browser.nvim",
 		requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
 	}
+	--dap-tests
+	use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+	use ('theHamsta/nvim-dap-virtual-text')
+	use ('leoluz/nvim-dap-go')
+	use ('nvim-telescope/telescope-dap.nvim')
+	--dap-tests
 end)
