@@ -3,13 +3,7 @@ local lsp = require("lsp-zero")
 lsp.preset("recommended")
 
 lsp.ensure_installed({
-	'bashls',
 	'clangd',
-	'cssls',
-	'dockerls',
-	'html',
-	'jsonls',
-	'pyright',
 })
 
 -- Fix Undefined global 'vim'

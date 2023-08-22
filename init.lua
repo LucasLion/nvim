@@ -1,1 +1,2 @@
 require("noil")
+print("hello")
