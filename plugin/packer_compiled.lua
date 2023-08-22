@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/nfs/homes/llion/.var/app/io.neovim.nvim/data/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["codeium.vim"] = {
+    loaded = true,
+    path = "/nfs/homes/llion/.var/app/io.neovim.nvim/data/nvim/site/pack/packer/start/codeium.vim",
+    url = "https://github.com/Exafunction/codeium.vim"
+  },
   ["copilot.vim"] = {
     loaded = true,
     path = "/nfs/homes/llion/.var/app/io.neovim.nvim/data/nvim/site/pack/packer/start/copilot.vim",
@@ -164,6 +169,16 @@ _G.packer_plugins = {
     path = "/nfs/homes/llion/.var/app/io.neovim.nvim/data/nvim/site/pack/packer/start/neoscroll.nvim",
     url = "https://github.com/karb94/neoscroll.nvim"
   },
+  ["noice.nvim"] = {
+    loaded = true,
+    path = "/nfs/homes/llion/.var/app/io.neovim.nvim/data/nvim/site/pack/packer/start/noice.nvim",
+    url = "https://github.com/folke/noice.nvim"
+  },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/nfs/homes/llion/.var/app/io.neovim.nvim/data/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/nfs/homes/llion/.var/app/io.neovim.nvim/data/nvim/site/pack/packer/start/nvim-cmp",
@@ -193,6 +208,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/nfs/homes/llion/.var/app/io.neovim.nvim/data/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-notify"] = {
+    loaded = true,
+    path = "/nfs/homes/llion/.var/app/io.neovim.nvim/data/nvim/site/pack/packer/start/nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
   },
   ["nvim-tree.lua"] = {
     loaded = true,

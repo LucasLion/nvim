@@ -1,13 +1,13 @@
 require('toggleterm').setup({
 	direction = 'float',
 	open_mapping = [[<c-\>]],
+	shell = "bash", 
 })
 
 vim.keymap.set('n', '<leader>tt', '<cmd>ToggleTerm direction=float<cr>', { noremap = true, silent = true })
 vim.keymap.set('t', '<leader>tt', '<cmd>ToggleTerm direction=float<cr>', { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>th', '<cmd>ToggleTerm direction=horizontal<cr>', { noremap = true, silent = true })
 vim.keymap.set('t', '<leader>th', '<cmd>ToggleTerm direction=horizontal<cr>', { noremap = true, silent = true })
-vim.keymap.set('n', '<leader>tv', '<cmd>ToggleTerm ', { noremap = true, silent = true })
 
 --Terminal:new {
 --  cmd = string -- command to execute when creating the terminal e.g. 'top'
