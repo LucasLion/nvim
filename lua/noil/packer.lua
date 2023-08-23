@@ -65,7 +65,6 @@ return require('packer').startup(function(use)
 	use ('nvim-telescope/telescope-dap.nvim')
 	--dap-tests
 	use ('Djancyp/cheat-sheet')
-	use ('Exafunction/codeium.vim')
 	use { 'folke/noice.nvim',
 	  requires = {
 		-- if you lazy-load any plugin below, make sure to add proper `module="..."` entries

@@ -1,7 +1,6 @@
 require('toggleterm').setup({
 	direction = 'float',
 	open_mapping = [[<c-\>]],
-	shell = "bash", 
 })
 
 vim.keymap.set('n', '<leader>tt', '<cmd>ToggleTerm direction=float<cr>', { noremap = true, silent = true })
