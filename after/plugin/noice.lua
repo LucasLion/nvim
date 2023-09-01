@@ -1,4 +1,7 @@
 require("noice").setup({
+  cmdline = {
+	  view = "cmdline_popup",
+  },
   lsp = {
     -- override markdown rendering so that **cmp** and other plugins use **Treesitter**
     override = {
@@ -15,7 +18,42 @@ require("noice").setup({
     inc_rename = false, -- enables an input dialog for inc-rename.nvim
     lsp_doc_border = false, -- add a border to hover docs and signature help
   },
+  health = {
+	  checker = false,
+  },
+  views = {
+      cmdline_popup = {
+        position = {
+          row = "80%",
+          col = "50%",
+        },
+        size = {
+          width = 50,
+          height = "auto",
+        },
+      },
+	popupmenu = {
+		enabled = true,
+		relative = "editor",
+		position = {
+		  row = 8,
+		  col = "50%",
+			},
+		size = {
+		  width = 60,
+		  height = 10,
+			},
+		border = {
+		  style = "rounded",
+		  padding = { 0, 1 },
+			},
+		win_options = {
+		  winhighlight = { Normal = "Normal", FloatBorder = "DiagnosticInfo" },
+			},
+		},
+    },
 })
 require("notify").setup({
 	background_colour = "#000000",
 })
+
