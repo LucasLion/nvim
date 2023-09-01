@@ -24,7 +24,7 @@ require("noice").setup({
   views = {
       cmdline_popup = {
         position = {
-          row = "80%",
+          row = 5,
           col = "50%",
         },
         size = {
@@ -34,13 +34,13 @@ require("noice").setup({
       },
 	popupmenu = {
 		enabled = true,
-		relative = "editor",
+		relative = "cmdline",
 		position = {
 		  row = 8,
 		  col = "50%",
 			},
 		size = {
-		  width = 60,
+		  width = 50,
 		  height = 10,
 			},
 		border = {
