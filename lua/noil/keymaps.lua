@@ -42,6 +42,8 @@ vim.g.user42 = "llion@student.42mulhouse.fr"
 -- move hilighted
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set('v', '>', '>gv', { noremap = true })
+vim.keymap.set('v', '<', '<gv', { noremap = true })
 
 -- make J to stay in place
 vim.keymap.set("n", "J", "mzJ`z")
