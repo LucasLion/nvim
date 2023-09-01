@@ -74,5 +74,10 @@ return require('packer').startup(function(use)
 		--   If not available, we use `mini` as the fallback
 		{'rcarriga/nvim-notify'},
 		}
-}
+	}
+	use { 'rmagatti/goto-preview',
+		config = function()
+			require('goto-preview').setup {}
+		end
+	}
 end)
