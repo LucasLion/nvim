@@ -1,2 +1,1 @@
 require("noil")
-print("hello")

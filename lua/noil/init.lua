@@ -1,5 +1,4 @@
-require("noil.keymaps")
-require("noil.packer")
+require("noil.lazy")
 require("noil.set")
-require'nvim-web-devicons'.get_icons()
+require("noil.keymaps")
 
