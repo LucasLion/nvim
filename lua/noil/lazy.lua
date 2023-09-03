@@ -59,7 +59,6 @@ local plugins = {
 		'nvim-lualine/lualine.nvim',
 		dependencies = { 'nvim-tree/nvim-web-devicons', lazy = true }
 	},
-	'karb94/neoscroll.nvim',
 	{
 		"nvim-telescope/telescope-file-browser.nvim",
 		dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
@@ -68,6 +67,8 @@ local plugins = {
 	{ "rcarriga/nvim-dap-ui", dependencies = {"mfussenegger/nvim-dap"} },
 	'theHamsta/nvim-dap-virtual-text',
 	'nvim-telescope/telescope-dap.nvim',
+	'jay-babu/mason-nvim-dap.nvim',
+	'mfussenegger/nvim-dap-python',
 	--dap-tests
 	'Djancyp/cheat-sheet',
 	{
@@ -78,6 +79,7 @@ local plugins = {
 		}
 	},
 	'rmagatti/goto-preview',
+	'karb94/neoscroll.nvim',
 }
 
 require('lazy').setup(plugins, {})

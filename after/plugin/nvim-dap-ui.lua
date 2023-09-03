@@ -10,6 +10,7 @@ vim.keymap.set('n', "<F8>", "<cmd>lua require'dap'.repl.open()<CR>")
 --vim.keymap.set('n', "<leader>zz", "<cmd>lua require'dapui'.open()<CR>")
 
 require("nvim-dap-virtual-text").setup()
+
 require("dapui").setup()
 require("dap").adapters.lldb = {
 	type = "executable",
@@ -20,6 +21,72 @@ require("dap").configurations.cpp = {
 	{
 		name = "Launch",
 		type = "lldb",
+		request = "launch",
+		program = function()
+			return vim.fn.input(
+				"Path to executable: ",
+				vim.fn.getcwd() .. "/",
+				"file"
+			)
+		end,
+		cwd = "${workspaceFolder}",
+		stopOnEntry = false,
+		args = {},
+		runInTerminal = false,
+	},
+}
+
+require("dap").configurations.c = {
+	{
+		name = "Launch",
+		type = "lldb",
+		request = "launch",
+		program = function()
+			return vim.fn.input(
+				"Path to executable: ",
+				vim.fn.getcwd() .. "/",
+				"file"
+			)
+		end,
+		cwd = "${workspaceFolder}",
+		stopOnEntry = false,
+		args = {},
+		runInTerminal = false,
+	},
+}
+
+require("dap").configurations.c = {
+	{
+		name = "Launch",
+		type = "lldb",
+		request = "launch",
+		program = function()
+			return vim.fn.input(
+				"Path to executable: ",
+				vim.fn.getcwd() .. "/",
+				"file"
+			)
+		end,
+		cwd = "${workspaceFolder}",
+		stopOnEntry = false,
+		args = {},
+		runInTerminal = false,
+	},
+}
+
+require("dap").adapters.python = {
+	type = "executable",
+	command = "/usr/bin/python3",
+	args = {
+		"-m",
+		"debugpy.adapter",
+	},
+}
+
+require("dap").configurations.python = {
+	{
+		name = "Launch",
+		type = "python",
 		request = "launch",
 		program = function()
 			return vim.fn.input(
@@ -46,3 +113,26 @@ end
 dap.listeners.before.event_exited["dapui_config"] = function()
 	dapui.close()
 end
+
+require ('mason-nvim-dap').setup({
+	ensure_installed = {'stylua', 'python', 'cpp', 'c'},
+    handlers = {
+        function(config)
+          -- all sources with no handler get passed here
+
+          -- Keep original functionality
+          require('mason-nvim-dap').default_setup(config)
+        end,
+        python = function(config)
+            config.adapters = {
+	            type = "executable",
+	            command = "/usr/bin/python3",
+	            args = {
+		            "-m",
+		            "debugpy.adapter",
+	            },
+            }
+            require('mason-nvim-dap').default_setup(config) -- don't forget this!
+        end,
+    },
+})
