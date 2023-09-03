@@ -52,11 +52,7 @@ local plugins = {
 	'42Paris/42header',
 	'github/copilot.vim',
 	'nvim-tree/nvim-web-devicons',
-	{
-		"akinsho/toggleterm.nvim", tag = '*', config = function()
-		require("toggleterm").setup()
-			end
-	},
+	{'akinsho/toggleterm.nvim', version = "*", config = true},
 	'romgrk/barbar.nvim',
 	'nvim-tree/nvim-tree.lua',
 	{
