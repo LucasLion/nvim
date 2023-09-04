@@ -20,7 +20,15 @@ local plugins = {
 		tag = '0.1.2',
 	    dependencies = { {'nvim-lua/plenary.nvim'} }
 	},
+	-- themes
+	'zaldih/themery.nvim',
 	'ellisonleao/gruvbox.nvim',
+	'sainnhe/everforest',
+	'sainnhe/gruvbox-material',
+	'sainnhe/edge',
+	'sainnhe/sonokai',
+	'folke/tokyonight.nvim',
+	'catppuccin/nvim',
 	{'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
 	'nvim-treesitter/playground',
 	'theprimeagen/harpoon',

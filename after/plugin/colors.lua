@@ -1,12 +1,20 @@
---function ColorMyPencils(color)
---	color = color or "rose-pine"
---	vim.cmd.colorscheme(color)
---
---	vim.api.nvim_set_hl(0, "Normal", { bg = "none"})
---	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none"})
---    local win = vim.api.nvim_get_current_win()
---    vim.api.nvim_win_set_option(win, 'winblend', 100)
---end
+
+
+
+
+
+
+
+
+
+require("themery").setup({
+  themes = {"gruvbox", 'everforest', 'gruvbox-material', 'edge', 'sonokai', 'tokyonight', 'catppuccin'},  -- Your list of installed colorschemes
+  themeConfigFile = "~/.config/nvim/after/plugin/colors.lua", -- Described below
+  livePreview = true,
+  transparentBackground = true,
+})
+
+vim.keymap.set('n', '<leader>tl', '<cmd>Themery<cr>')
 
 require("gruvbox").setup({
 	undercurl = true,
@@ -37,7 +45,10 @@ function ColorMyPencils(color)
 
 	vim.api.nvim_set_hl(0, "Normal", { bg = "none"})
 	vim.api.nvim_set_hl(1, "NormalFloat", { bg = "none"})
-    --local win = vim.api.nvim_get_current_win()
-    --vim.api.nvim_win_set_option(win, 'winblend', 10)
 end
 ColorMyPencils()
+
+-- Themery block
+-- This block will be replaced by Themery.
+vim.cmd("colorscheme gruvbox")
+-- end themery block
