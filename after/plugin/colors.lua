@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 require("themery").setup({
   themes = {"gruvbox", 'everforest', 'gruvbox-material', 'edge', 'sonokai', 'tokyonight', 'catppuccin'},  -- Your list of installed colorschemes
   themeConfigFile = "~/.config/nvim/after/plugin/colors.lua", -- Described below

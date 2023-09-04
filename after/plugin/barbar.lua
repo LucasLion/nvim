@@ -64,7 +64,7 @@ require'barbar'.setup {
 
   -- A buffer to this direction will be focused (if it exists) when closing the current buffer.
   -- Valid options are 'left' (the default), 'previous', and 'right'
-  focus_on_close = 'right',
+  focus_on_close = 'left',
 
   -- Hide inactive buffers and file extensions. Other options are `alternate`, `current`, and `visible`.
   hide = {extensions = false, inactive = false},
@@ -81,7 +81,7 @@ require'barbar'.setup {
   icons = {
     -- Configure the base icons on the bufferline.
     -- Valid options to display the buffer index and -number are `true`, 'superscript' and 'subscript'
-    buffer_index = true,
+    buffer_index = false,
     buffer_number = false,
     button = '󰅖',
     -- Enables / disables diagnostic symbols
