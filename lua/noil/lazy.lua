@@ -88,6 +88,7 @@ local plugins = {
 	},
 	'rmagatti/goto-preview',
 	'karb94/neoscroll.nvim',
+	'pocco81/auto-save.nvim',
 }
 
 require('lazy').setup(plugins, {})
