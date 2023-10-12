@@ -5,7 +5,7 @@ vim.g.loaded_netrwPlugin = 1
 vim.g.mapleader = " "
 vim.g.nvim_tree_side = 'right'
 
-vim.keymap.set(',', '<leader>n', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>n', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 
 require("nvim-tree").setup({
   sort_by = "case_sensitive",
