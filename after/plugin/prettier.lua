@@ -1,6 +1,6 @@
 local prettier = require("prettier")
 
-vim.keymap.set('n', '<C-p>', builtin.git_files, {})
+vim.keymap.set("n", "<leader>o", ":Prettier<CR>")
 
 prettier.setup({
   bin = 'prettier', -- or `'prettierd'` (v0.23.3+)
