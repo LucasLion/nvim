@@ -28,6 +28,7 @@ vim.keymap.set('t', '<leader>th', '<cmd>ToggleTerm direction=horizontal<cr>', { 
 local Terminal  = require('toggleterm.terminal').Terminal
 local lazygit = Terminal:new({ cmd = "lazygit", hidden = true })
 local htop = Terminal:new({cmd = "htop", hidden = true})
+local docker = Terminal:new({cmd = "lazydocker", hidden = true})
 
 function _Lazygit_toggle()
   lazygit:toggle()
@@ -37,5 +38,11 @@ function _Htop_toggle()
 	htop:toggle()
 end
 
+function _Lazydocker_toggle()
+	docker:toggle()
+end
+
 vim.api.nvim_set_keymap("n", "<leader>git", "<cmd>lua _Lazygit_toggle()<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<leader>top", "<cmd>lua _Htop_toggle()<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>doc", "<cmd>lua _Lazydocker_toggle()<CR>", {noremap = true, silent = true})
+
