@@ -91,6 +91,8 @@ local plugins = {
 	'rmagatti/goto-preview',
 	'karb94/neoscroll.nvim',
 	'pocco81/auto-save.nvim',
+	"folke/twilight.nvim",
+	"folke/zen-mode.nvim",
 }
 
 require('lazy').setup(plugins, {})
