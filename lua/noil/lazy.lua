@@ -93,6 +93,20 @@ local plugins = {
 	'pocco81/auto-save.nvim',
 	"folke/twilight.nvim",
 	"folke/zen-mode.nvim",
+	{
+	  "jackMort/ChatGPT.nvim",
+		event = "VeryLazy",
+		config = function()
+		  require("chatgpt").setup()
+		end,
+		dependencies = {
+		  "MunifTanjim/nui.nvim",
+		  "nvim-lua/plenary.nvim",
+		  "folke/trouble.nvim",
+		  "nvim-telescope/telescope.nvim"
+    }
 }
+}
+
 
 require('lazy').setup(plugins, {})
