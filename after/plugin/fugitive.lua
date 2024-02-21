@@ -9,3 +9,4 @@ vim.keymap.set("n", "<leader>gd", ":Gvdiffsplit!<CR>")
 vim.keymap.set("n", "<leader>gc", ":Gcommit<CR>")
 vim.keymap.set("n", "<leader>gp", ":Git push<CR>")
 vim.keymap.set("n", "<leader>gl", ":Git pull<CR>")
+

@@ -104,8 +104,9 @@ local plugins = {
 		  "nvim-lua/plenary.nvim",
 		  "folke/trouble.nvim",
 		  "nvim-telescope/telescope.nvim"
-    }
-}
+		}
+	},
+	"lewis6991/gitsigns.nvim",
 }
 
 
