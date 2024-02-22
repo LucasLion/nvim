@@ -44,3 +44,11 @@ vim.api.nvim_set_keymap(
    "<cmd>lua require 'telescope'.extensions.file_browser.file_browser()<CR>",
    {noremap = true}
 )
+
+-- search in specific directory
+function searchInDirectory()
+	local directory = vim.fn.input("Directory: ")
+	vim.cmd("Telescope find_files cwd=" .. directory)
+end
+
+vim.api.nvim_set_keymap("n", "<leader>fd", ":lua searchInDirectory()<CR>", { noremap = true, silent = true})
