@@ -1,6 +1,20 @@
 
+vim.keymap.set("n", "<leader>cc", "<cmd>ChatGPT<CR>")
+vim.keymap.set("v", "<leader>ce", "<cmd>ChatGPTEditWithInstruction<CR>")
+vim.keymap.set("v", "<leader>cg", "<cmd>ChatGPTRun grammar_correction<CR>")
+vim.keymap.set("v", "<leader>ct", "<cmd>ChatGPTRun translate<CR>")
+vim.keymap.set("v", "<leader>ck", "<cmd>ChatGPTRun keywords<CR>")
+vim.keymap.set("v", "<leader>cd", "<cmd>ChatGPTRun docstring<CR>")
+vim.keymap.set("v", "<leader>ca", "<cmd>ChatGPTRun add_tests<CR>")
+vim.keymap.set("v", "<leader>co", "<cmd>ChatGPTRun optimize_code<CR>")
+vim.keymap.set("v", "<leader>cs", "<cmd>ChatGPTRun summarize<CR>")
+vim.keymap.set("v", "<leader>cf", "<cmd>ChatGPTRun fix_bugs<CR>")
+vim.keymap.set("v", "<leader>cx", "<cmd>ChatGPTRun explain_code<CR>")
+vim.keymap.set("v", "<leader>cr", "<cmd>ChatGPTRun roxygen_edit<CR>")
+vim.keymap.set("v", "<leader>cl", "<cmd>ChatGPTRun code_readability_analysis<CR>")
+
 require("chatgpt").setup({
-	api_key_cmd = "secret-tool lookup openai neovim",
+	api_key_cmd = "pass show openai",
     yank_register = "+",
     edit_with_instructions = {
       diff = false,
@@ -173,18 +187,3 @@ require("chatgpt").setup({
     },
   }
 )
-
-vim.keymap.set("n", "<leader>cc", "<cmd>ChatGPT<CR>")
-vim.keymap.set("v", "<leader>ce", "<cmd>ChatGPTEditWithInstruction<CR>")
-vim.keymap.set("v", "<leader>cg", "<cmd>ChatGPTRun grammar_correction<CR>")
-vim.keymap.set("v", "<leader>ct", "<cmd>ChatGPTRun translate<CR>")
-vim.keymap.set("v", "<leader>ck", "<cmd>ChatGPTRun keywords<CR>")
-vim.keymap.set("v", "<leader>cd", "<cmd>ChatGPTRun docstring<CR>")
-vim.keymap.set("v", "<leader>ca", "<cmd>ChatGPTRun add_tests<CR>")
-vim.keymap.set("v", "<leader>co", "<cmd>ChatGPTRun optimize_code<CR>")
-vim.keymap.set("v", "<leader>cs", "<cmd>ChatGPTRun summarize<CR>")
-vim.keymap.set("v", "<leader>cf", "<cmd>ChatGPTRun fix_bugs<CR>")
-vim.keymap.set("v", "<leader>cx", "<cmd>ChatGPTRun explain_code<CR>")
-vim.keymap.set("v", "<leader>cr", "<cmd>ChatGPTRun roxygen_edit<CR>")
-vim.keymap.set("v", "<leader>cl", "<cmd>ChatGPTRun code_readability_analysis<CR>")
-
