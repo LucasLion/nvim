@@ -93,20 +93,16 @@ local plugins = {
 	'pocco81/auto-save.nvim',
 	"folke/twilight.nvim",
 	"folke/zen-mode.nvim",
-	{
-	  "jackMort/ChatGPT.nvim",
-		event = "VeryLazy",
-		config = function()
-		  require("chatgpt").setup()
-		end,
-		dependencies = {
-		  "MunifTanjim/nui.nvim",
-		  "nvim-lua/plenary.nvim",
-		  "folke/trouble.nvim",
-		  "nvim-telescope/telescope.nvim"
-		}
-	},
 	"lewis6991/gitsigns.nvim",
+	{
+		'akinsho/flutter-tools.nvim',
+		lazy = false,
+		dependencies = {
+			'nvim-lua/plenary.nvim',
+			'stevearc/dressing.nvim', -- optional for vim.ui.select
+		},
+		config = true,
+	}
 }
 
 
