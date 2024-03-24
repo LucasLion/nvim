@@ -27,3 +27,12 @@ vim.opt.updatetime = 50
 
 vim.g.mapleader = " "
 
+vim.cmd [[
+    augroup FileTypeSettings
+        autocmd!
+        autocmd FileType python setlocal tabstop=4 shiftwidth=4 expandtab
+        autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 expandtab
+        autocmd FileType dart setlocal tabstop=2 shiftwidth=2 expandtab
+    augroup END
+]]
+
