@@ -17,5 +17,6 @@ prettier.setup({
     "typescript",
     "typescriptreact",
     "yaml",
+	"dart",
   },
 })

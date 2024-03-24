@@ -73,13 +73,6 @@ local plugins = {
 		"nvim-telescope/telescope-file-browser.nvim",
 		dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
 	},
-	--dap-tests
-	{ "rcarriga/nvim-dap-ui", dependencies = {"mfussenegger/nvim-dap"} },
-	'theHamsta/nvim-dap-virtual-text',
-	'nvim-telescope/telescope-dap.nvim',
-	'jay-babu/mason-nvim-dap.nvim',
-	'mfussenegger/nvim-dap-python',
-	--dap-tests
 	'Djancyp/cheat-sheet',
 	{
 		'folke/noice.nvim',
