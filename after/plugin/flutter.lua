@@ -8,4 +8,3 @@ require("flutter-tools").setup {
     enabled = true,
   },
 }
->>>>>>> 0c7cd0d49dfbc718ecf182dc9df04eb86e71c435
