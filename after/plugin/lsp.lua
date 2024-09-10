@@ -4,7 +4,6 @@ lsp.preset("recommended")
 
 lsp.ensure_installed({
 	'clangd',
-	'tsserver',
 	'eslint',
 })
 
@@ -38,17 +37,17 @@ lsp.set_preferences({
     }
 })
 
-lsp.on_attach(function(bufnr)
-  local opts = {buffer = bufnr, remap = false}
+lsp.on_attach(function(client, bufnr)
+  local opts = {noremap = true, silent = true, buffer = bufnr}
 
-  vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
-  vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
-  vim.keymap.set("n", "<leader>kws", function() vim.lsp.buf.workspace_symbol() end, opts)
-  vim.keymap.set("n", "<leader>kd", function() vim.diagnostic.open_float() end, opts)
-  vim.keymap.set("n", "<leader>kca", function() vim.lsp.buf.code_action() end, opts)
-  vim.keymap.set("n", "<leader>krr", function() vim.lsp.buf.references() end, opts)
-  vim.keymap.set("n", "<leader>krn", function() vim.lsp.buf.rename() end, opts)
-  vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
+  vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+  vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
+  vim.keymap.set("n", "<leader>kws", vim.lsp.buf.workspace_symbol, opts)
+  vim.keymap.set("n", "<leader>kd", vim.diagnostic.open_float, opts)
+  vim.keymap.set("n", "<leader>kca", vim.lsp.buf.code_action, opts)
+  vim.keymap.set("n", "<leader>krr", vim.lsp.buf.references, opts)
+  vim.keymap.set("n", "<leader>krn", vim.lsp.buf.rename, opts)
+  vim.keymap.set("i", "<C-h>", vim.lsp.buf.signature_help, opts)
 end)
 
 lsp.setup()
