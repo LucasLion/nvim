@@ -4,8 +4,8 @@ lsp.preset("recommended")
 
 lsp.ensure_installed({
 	'clangd',
-	'tsserver',
-	'eslint',
+  'tsserver',
+  'eslint',
 })
 
 -- Fix Undefined global 'vim'
@@ -39,7 +39,7 @@ lsp.set_preferences({
 })
 
 lsp.on_attach(function(bufnr)
-  local opts = {buffer = bufnr, remap = false}
+  -- local opts = {buffer = bufnr, remap = false}
 
   vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
   vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)

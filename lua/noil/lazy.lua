@@ -74,13 +74,13 @@ local plugins = {
 		dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
 	},
 	'Djancyp/cheat-sheet',
-	{
-		'folke/noice.nvim',
-		dependencies = {
-			{'MunifTanjim/nui.nvim'},
-			{'rcarriga/nvim-notify'},
-		}
-	},
+	-- {
+	-- 	'folke/noice.nvim',
+	-- 	dependencies = {
+	-- 		{'MunifTanjim/nui.nvim'},
+	-- 		{'rcarriga/nvim-notify'},
+	-- 	}
+	-- },
 	'rmagatti/goto-preview',
 	'karb94/neoscroll.nvim',
 	'pocco81/auto-save.nvim',
@@ -112,7 +112,20 @@ local plugins = {
 			vim.fn["firenvim#install"](0)
 		end
 	},
-  'reisub0/hot-reload.vim'
+  'reisub0/hot-reload.vim',
+  {
+    "CopilotC-Nvim/CopilotChat.nvim",
+    branch = "canary",
+    dependencies = {
+      { "zbirenbaum/copilot.lua" }, -- or github/copilot.vim
+      { "nvim-lua/plenary.nvim" }, -- for curl, log wrapper
+    },
+    build = "make tiktoken", -- Only on MacOS or Linux
+    opts = {
+      debug = true, -- Enable debugging
+      -- See Configuration section for rest
+    },
+  },
 }
 
 
