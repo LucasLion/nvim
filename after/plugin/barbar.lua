@@ -6,7 +6,7 @@ vim.api.nvim_set_keymap('n', '<A-l>', '<Cmd>BufferNext<CR>', opts)
 -- Re-order to previous/next
 vim.api.nvim_set_keymap('n', '<A-H>', '<Cmd>BufferMovePrevious<CR>', opts)
 vim.api.nvim_set_keymap('n', '<A-L>', '<Cmd>BufferMoveNext<CR>', opts)
--- Goto buffer in position...
+-j- Goto buffer in position...
 vim.api.nvim_set_keymap('n', '<A-1>', '<Cmd>BufferGoto 1<CR>', opts)
 vim.api.nvim_set_keymap('n', '<A-2>', '<Cmd>BufferGoto 2<CR>', opts)
 vim.api.nvim_set_keymap('n', '<A-3>', '<Cmd>BufferGoto 3<CR>', opts)
@@ -59,7 +59,7 @@ require'barbar'.setup {
   clickable = true,
 
   -- Excludes buffers from the tabline
-  exclude_ft = {'javascript'},
+  exclude_ft = {},
   exclude_name = {'package.json'},
 
   -- A buffer to this direction will be focused (if it exists) when closing the current buffer.
