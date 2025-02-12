@@ -6,7 +6,7 @@ vim.api.nvim_set_keymap('n', '<A-l>', '<Cmd>BufferNext<CR>', opts)
 -- Re-order to previous/next
 vim.api.nvim_set_keymap('n', '<A-H>', '<Cmd>BufferMovePrevious<CR>', opts)
 vim.api.nvim_set_keymap('n', '<A-L>', '<Cmd>BufferMoveNext<CR>', opts)
--j- Goto buffer in position...
+-- Goto buffer in position...
 vim.api.nvim_set_keymap('n', '<A-1>', '<Cmd>BufferGoto 1<CR>', opts)
 vim.api.nvim_set_keymap('n', '<A-2>', '<Cmd>BufferGoto 2<CR>', opts)
 vim.api.nvim_set_keymap('n', '<A-3>', '<Cmd>BufferGoto 3<CR>', opts)
