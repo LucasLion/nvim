@@ -1,6 +1,6 @@
 local neoscroll = require('neoscroll')
 local keymap = {
-  ["<C-u>"] = function() neoscroll.ctrl_u({ duration = 10 }) end,
+  ["<C-u>"] = function() neoscroll.ctrl_u({ duration = 150 }) end,
   ["<C-d>"] = function() neoscroll.ctrl_d({ duration = 150 }) end,
   ["<C-b>"] = function() neoscroll.ctrl_b({ duration = 350 }) end,
   ["<C-f>"] = function() neoscroll.ctrl_f({ duration = 350 }) end,
