@@ -3,6 +3,7 @@ require("CopilotChat").setup {
 
 	-- shortcur :CopilotChatToggle
 	vim.keymap.set("n", "<leader>i", ":CopilotChatToggle<CR>", { noremap = true, silent = true }),
+	vim.keymap.set("n", "<leader>r", ":CopilotChatStop<CR>", { noremap = true, silent = true }),
 	vim.keymap.set("v", "<leader>i", ":CopilotChat<CR>", { noremap = true, silent = true }),
 
 	window = {
