@@ -39,5 +39,7 @@ vim.cmd [[
         autocmd FileType css setlocal tabstop=2 shiftwidth=2 expandtab
         autocmd FileType tpl setlocal tabstop=2 shiftwidth=2 expandtab
         autocmd FileType js setlocal tabstop=2 shiftwidth=2 expandtab
+		autocmd FileType json setlocal tabstop=2 shiftwidth=2 expandtab
+		autocmd FileType php setlocal tabstop=2 shiftwidth=2 expandtab	
     augroup END
 ]]
