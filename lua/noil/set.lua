@@ -1,5 +1,9 @@
 vim.opt.guicursor = ""
 
+vim.o.encoding = "utf-8"
+vim.o.fileencoding = "utf-8"
+vim.o.bomb = true
+
 vim.opt.nu = true
 vim.opt.relativenumber = false
 
