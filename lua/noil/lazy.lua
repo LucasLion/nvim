@@ -73,14 +73,6 @@ local plugins = {
 		"nvim-telescope/telescope-file-browser.nvim",
 		dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
 	},
-	'Djancyp/cheat-sheet',
-	-- {
-	-- 	'folke/noice.nvim',
-	-- 	dependencies = {
-	-- 		{'MunifTanjim/nui.nvim'},
-	-- 		{'rcarriga/nvim-notify'},
-	-- 	}
-	-- },
 	'rmagatti/goto-preview',
 	'karb94/neoscroll.nvim',
 	'pocco81/auto-save.nvim',
