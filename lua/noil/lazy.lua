@@ -60,7 +60,6 @@ local plugins = {
 	},
 	'szw/vim-maximizer',
 	'42Paris/42header',
-	'github/copilot.vim',
 	'nvim-tree/nvim-web-devicons',
 	{'akinsho/toggleterm.nvim', version = "*", config = true},
 	'romgrk/barbar.nvim',
@@ -106,11 +105,14 @@ local plugins = {
 	},
   'reisub0/hot-reload.vim',
   {
+		'github/copilot.vim',
+		branch = 'release',
+  },
+  {
     "CopilotC-Nvim/CopilotChat.nvim",
-    branch = "canary",
+    branch = "main",
     dependencies = {
-      { "zbirenbaum/copilot.lua" }, -- or github/copilot.vim
-      { "nvim-lua/plenary.nvim" }, -- for curl, log wrapper
+        { "nvim-lua/plenary.nvim" }, -- for curl, log wrapper
     },
     build = "make tiktoken", -- Only on MacOS or Linux
     opts = {
