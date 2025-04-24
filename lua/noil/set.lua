@@ -45,5 +45,8 @@ vim.cmd [[
         autocmd FileType js setlocal tabstop=2 shiftwidth=2 expandtab
 		autocmd FileType json setlocal tabstop=2 shiftwidth=2 expandtab
 		autocmd FileType php setlocal tabstop=4 shiftwidth=4 expandtab	
+	    autocmd FileType lua setlocal tabstop=2 shiftwidth=2 expandtab
     augroup END
 ]]
+
+vim.deprecate = function() end
